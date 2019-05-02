@@ -1,0 +1,34 @@
+<section class="Hero {{ if and .Params.size (eq .Params.size "Big") }}is-medium {{end }}is-bold {{ partial "blocks/meta/background-style" .Params.background_style }}"
+{{- with .Params.background_image -}}
+{{ safeHTMLAttr (printf "style=%q" (printf "background-image: url(%s)" (relURL .) )) }}
+{{- end -}}>
+    <div class="container hero-body">
+        <div class="headingGroup">
+            {{- with .Params.heading -}}
+            <h1 class="title">
+                {{ markdownify . }}
+            </h1>
+            {{- end -}}
+            {{- with .Params.subheading -}}
+            <h2 class="subtitle">
+                {{ markdownify . }}
+            </h2>
+            {{- end -}}
+        </div>
+        {{- with .Params.copy -}}
+        <p class="copy">
+            {{ markdownify . }}
+        </p>
+        {{- end -}}
+        <div class="ButtonGroup --pullRight">
+            {{- if and .Params.button_url .Params.button_text -}}
+            <a
+                class="button button--wire-white"
+                href="{{ .Params.button_url }}"
+            >
+                {{ .Params.button_text }}
+            </a>
+            {{- end -}}
+        </div>
+    </div>  
+</section>

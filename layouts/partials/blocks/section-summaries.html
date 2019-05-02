@@ -1,0 +1,14 @@
+<section class="PageWrapper">
+    <ul class="SectionSummaries">
+        {{ range .Params.sections }}
+        <li class="SectionSummary">
+            <div class="image">
+                <img src="{{ .image }}" alt="Photo of {{ .name }}">
+            </div>
+            <h2 class="title1">{{ .headline }}</h2>
+           
+            <p class="body2">{{ .content }}</p>
+        </li>
+        {{ end }}
+    </ul>
+</section>

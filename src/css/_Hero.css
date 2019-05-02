@@ -1,0 +1,28 @@
+.Hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.Hero_headline {
+  display: flex;
+  align-items: center;
+  font-family: 'Carolyna Pro Black';
+  font-size: 13em;
+  margin-bottom: 0;
+}
+
+.Hero_logo {
+  margin-top: -10px;
+}
+.Hero_subheadline {
+  font-size: 3em;
+  font-weight: 200;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #e9e3e3;
+  letter-spacing: 1.5pt
+}
