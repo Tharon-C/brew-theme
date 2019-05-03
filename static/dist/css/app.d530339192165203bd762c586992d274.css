@@ -5924,17 +5924,18 @@ pre {
 }
 
 .SectionSummary .image {
-  min-height: 10em;
-  min-width: 10em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 0;
+  overflow: hidden;
+  padding-top: 56%;
+  background: white;
+  position: relative;
+  border-radius: 10px;
+}
+
+.SectionSummary .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .PageWrapper {

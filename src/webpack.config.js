@@ -2,6 +2,8 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var webpack = require('webpack');
 var AssetsPlugin = require('assets-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
 
 module.exports = {
 	entry: {
@@ -49,6 +51,7 @@ module.exports = {
 	},
 
 	plugins: [
+    new CleanWebpackPlugin(),
 		new AssetsPlugin({
 			filename: 'webpack_assets.json',
 			path: path.join(__dirname, '../data'),
