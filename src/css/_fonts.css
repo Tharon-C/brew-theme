@@ -4,5 +4,5 @@
   font-family: 'Carolyna Pro Black';
   font-style: normal;
   font-weight: normal;
-  src: local('Carolyna Pro Black'), url('../fonts/carolyna-pro-black.woff') format('woff');
+  src: local('Carolyna Pro Black'), url('./carolyna-pro-black.woff') format('woff');
 }

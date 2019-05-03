@@ -1,9 +1,9 @@
 {
   "app": {
     "js": "js/app.3fc0f988d21662902933.js",
-    "css": "css/app.fed760dad6cbaa830c760ccedf77825c.css"
+    "css": "css/app.d83bd32df240b66ab5da3e182e7cdaea.css"
   },
   "": {
-    "woff": "./fonts/carolyna-pro-black.woff"
+    "woff": "./carolyna-pro-black.woff"
   }
 }
