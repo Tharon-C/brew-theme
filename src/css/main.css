@@ -4,5 +4,9 @@
 @import '_hugo-internal-templates';
 @import '_social-icons';
 @import '_styles';
-@import '_Hero'
+@import '_Hero';
+@import '_Sectionsummaries';
+@import '_PageWrapper';
+@import '_Button';
+@import '_Layout';
 

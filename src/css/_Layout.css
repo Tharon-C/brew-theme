@@ -1,0 +1,9 @@
+.Flex {
+  display: flex;
+  &.--verticalCenter {
+      align-items: center;
+  }
+  &.--horizontalCenter {
+      justify-content: center
+  }
+}
