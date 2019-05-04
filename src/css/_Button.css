@@ -2,16 +2,34 @@
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
+  border-radius: 3px;
+  outline: none;
 }
 
 .button--wire {
-  border: solid 1px black
+  border: solid 2px black;
+  color: black;
+  &:visited {
+    color: black;
+  }
 }
 
-.button--wire-white {
-  border:solid 1px white;
+.button-primary {
+  background: $primary-color;
+  border: none;
   color: white;
+  &:visited {
+    color: white;
+  }
 }
+.button--wire-white {
+  border:solid 2px white;
+  color: white;
+  &:visited {
+    color: white;
+  }
+}
+
 
 .ButtonGroup {
   display: flex;

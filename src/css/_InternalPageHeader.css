@@ -1,0 +1,11 @@
+.InternalPageHeader {
+  background: $primary-color;
+  & .logoFont {
+    font-size: 32px;
+  }
+  & .Logo {
+    width: 38px;
+    margin-right: 8px;
+  }
+}
+

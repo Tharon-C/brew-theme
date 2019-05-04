@@ -6,3 +6,7 @@
   font-weight: normal;
   src: local('Carolyna Pro Black'), url('./carolyna-pro-black.woff') format('woff');
 }
+
+.logoFont {
+  font-family: 'Carolyna Pro Black'
+}

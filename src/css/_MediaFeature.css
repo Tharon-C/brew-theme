@@ -1,0 +1,27 @@
+.MediaFeature {
+  display: relative;
+  & .container {
+    max-width: 950px;
+    margin: auto;
+  }
+  & .MediaFeature_imageSection {
+    width: 50%;
+  }
+  & .MediaFeature_image {
+      height: 0;
+      overflow: hidden;
+      padding-top: 75%;
+      background: white;
+      position: relative;
+      border-radius: 10px;
+
+      & img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+  }
+  & .MediaFeature_textSection {
+    max-width: 600px;
+  }
+}

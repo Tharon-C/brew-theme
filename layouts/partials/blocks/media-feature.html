@@ -1,16 +1,18 @@
-<section class="media-feature section {{ partial "blocks/meta/background-style" .Params.background_style }}
+<section class="PageWrapper MediaFeature section {{ partial "blocks/meta/background-style" .Params.background_style }}
 {{- with .Params.image_position -}}
     {{- if eq "Left" . }} media-feature--image-left{{- end -}}
     {{- if eq "Right" . }} media-feature--image-right{{- end -}}
     {{- if eq "Top" . }} media-feature--image-top{{- end -}}
     {{- if eq "Bottom" . }} media-feature--image-bottom{{- end -}}
 {{- end -}}">
-    <div class="PageWrapper pv5 container">
+    <div class="pv5 container">
         <div class="Flex">
-            <div class="column is-three-fifths media-feature__image {{ if .Params.image_shadow }}media-feature__image--shadow{{ end }}">
+            <div class="column mr5 MediaFeature_imageSection {{ if .Params.image_shadow }}media-feature__image--shadow{{ end }}">
+              <div class="MediaFeature_image">
                 <img src="{{ relURL .Params.image }}" />
+              </div>
             </div>
-            <div class="Flex --verticalCenter">
+            <div class="Flex MediaFeature_textSection --verticalCenter">
                 <div>
                     {{- with .Params.heading -}}
                         <h2 class="title">{{ markdownify . }}</h2>
@@ -19,14 +21,14 @@
                         <h3 class="subtitle">{{ markdownify . }}</h3>
                     {{- end -}}
                     {{- with .Params.content -}}
-                        <div class="content">
+                        <div class="content mb4">
                         {{ markdownify . }}
                         </div>
                     {{- end -}}
                     {{- if and .Params.button_url .Params.button_text -}}
                     <a class="button button--wire" href="{{ .Params.button_url }}">{{ .Params.button_text }}</a>
                     {{- end -}}
-                </div>     
+                </div>
             </div>
         </div>
     </div>

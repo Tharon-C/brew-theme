@@ -1,0 +1,36 @@
+/* Fields */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #aaa;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:    #aaa;
+ opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:    #aaa;
+ opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:    #aaa;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+ color:    #aaa;
+}
+
+/* Button */
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  background: lightGrey;
+  border-radius: 8px;
+  & input[type="text"],
+  & input[type="email"],
+  & textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    outline: none;
+    border: solid 1px grey;
+  }
+}

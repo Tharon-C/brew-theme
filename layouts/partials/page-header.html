@@ -18,9 +18,7 @@
     </div>
   </header>
 {{ else }}
-  <header>
-    <div class="{{ .Site.Params.background_color_class | default "bg-black" }}">
+  <header class="InternalPageHeader">
       {{ partialCached "site-navigation.html" . }}
-    </div>
   </header>
 {{ end }}

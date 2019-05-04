@@ -13,6 +13,9 @@
   font-family: 'Carolyna Pro Black';
   font-size: 13em;
   margin-bottom: 0;
+  & .Logo {
+    width: 200px
+  }
 }
 
 .Hero_logo {
