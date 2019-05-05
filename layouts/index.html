@@ -21,8 +21,8 @@
       {{ partial "blocks/section-summaries" (dict "Params" .) }}
     {{- end -}}
 
-    {{- if eq .template "centered-text" -}}
-      {{ partial "blocks/centered-text" (dict "Params" .) }}
+    {{- if eq .template "featured-text" -}}
+      {{ partial "blocks/featured-text" (dict "Params" .) }}
     {{- end -}}
   {{- end -}}
 {{ end }}
