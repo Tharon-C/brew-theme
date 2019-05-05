@@ -6,6 +6,7 @@
 @import '_hugo-internal-templates';
 @import '_social-icons';
 @import '_styles';
+@import '_typography';
 @import '_InternalPageHeader';
 @import '_Hero';
 @import '_SectionSummaries';

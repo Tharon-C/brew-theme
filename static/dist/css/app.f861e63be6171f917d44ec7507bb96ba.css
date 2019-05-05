@@ -4792,6 +4792,25 @@ pre {
   padding-left: 1rem;
 
 }
+p, .body1 {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgb(66, 64, 64);
+}
+.body2 {
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgb(66, 64, 64);
+}
+.body3 {
+  font-size: 28px;
+  line-height: 1.5;
+  color: rgb(66, 64, 64);
+}
+.label {
+  font-size: 16px;
+  color: rgb(82, 80, 80)
+}
 .InternalPageHeader {
   background: green
 }
